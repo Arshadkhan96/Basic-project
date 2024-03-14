@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container{
+            width: 100%;
+            height: 2000vh;
+            border: 2px solid red;
+            background-color: rgb(233, 233, 233);
+            /* overflow-x: hidden; */
+        }
+        .border{
+            width: 100%;
+            height: 55px;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            border: 2px solid red;
+            background-color: white;
+        }
+        
+        .border img{
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+         .border input{
+            border-radius: 5px;
+            position: relative;
+            border-color:  blue;
+            width: 350px;
+            left: 50px;
+            top: -10px;
+            height: 25px;
+            /* background-color: rgb(148, 148, 206); */
+            outline-style: none;  
+        }
+        .border a{
+            position: relative;
+            padding: 10px 10px 5px;
+            left: 160px;
+            text-decoration: none;
+            color: black;
+            top: -5px;
+        }
+        .photo {
+            width: 100%;
+            height: 90px;
+            position: relative;
+            top: 20px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+        .photo img{
+            position: relative;
+            left: 60px;
+            margin-left: 30px;
+        }
+        .pic{
+            width: 100%;
+            top: 60px;
+            /* background-color: white; */
+            position: relative;
+            height: 250px;
+            /* border: 2px solid red; */
+        }
+        .bank{
+            width: 100%;
+            height: 100px;
+            position: relative;
+            top: 80px;
+            background-color: white;
+            /* border: 2px solid greenyellow; */
+        }
+        .bank img{
+            position: relative;
+            text-align: center;
+        }
+        .phone{
+            position:  relative;
+            top: 100px;
+            background-color: white;
+            width: 100%;
+            height: 300px;
+            /* border: 2px solid rgb(0, 255, 200); */
+        }
+        .phone img{
+            padding: 20px 20px 20px;
+            left: 10px;
+            top: -14px;
+            position: relative;
+        }
+        .iphone{
+            position: relative;
+            left: 90px;
+            top: 120px;
+        }
+        .shoes{
+            top: 160px;
+            width: 100%;
+            background-color: white;
+            height: 200px;
+            /* left: 80px; */
+            position: relative;
+            /* border: 2px solid red; */
+        }
+        .shoes img{
+            position: relative;
+            /* padding: 10px 10px 10px 10px ; */
+            left: 70px;
+
+
+        }
+        .moto{
+            position: relative;
+            top: 170px;
+            left: 70px;
+
+        }
+        .feature{
+            width: 100%;
+            top: 200px;
+            background-color: white;
+            height: 280px;
+            position: relative;
+            left: 20px;
+            text-align: center;
+            /* border: 2px solid red; */
+        }
+        .feature img{
+            position: relative;
+            top: -10px;
+            /* text-align: center; */
+            /* left: 10px 10px; */
+        }
+        .feature h1{
+            position: relative;
+            /* top: -10px; */
+            text-align: left;
+        }
+        .hair img{
+            position: relative;
+            top: 232px;
+            left: 30px;
+        }
+        .chair{
+            width: 100%;
+            height: 360px;
+            background-color: white;
+            top: 270px;
+            position: relative;
+            /* border: 2px solid red; */
+        }
+        .chair img{
+         position: relative;
+         top: -20px;
+         border-radius: 20px;
+         left: 20px;
+        }
+        .chair h1{
+            position: relative;
+            /* top: -290; */
+            left: 20px;
+        }
+        .oneplus{
+            left: 30px;
+            top: 300px;
+            position: relative;
+
+        }
+        .fan{
+            width: 100%;
+            height: 270px;
+            position: relative;
+            top: 340px;
+            background-color: white;
+            /* border: 2px solid red; */
+        }
+        .fan img{
+            position: relative;
+          left: 15px;
+          top: 10px;
+          border-radius: 20px;
+        }
+        .bulb{
+            
+            position: relative;
+            top: 390px;
+            left: 20px;
+            padding-bottom: 30px;
+        }
+        .bulb img{
+            margin-bottom: 20px;
+        }
+        .read{
+            color: gray;
+            position: relative;
+            top: 500px;
+        }
+        .read h1{
+            position: relative;
+            /* text-align: right; */
+            left: 40px;
+            top: 20px;
+        }
+        .facbook{
+            width: 100%;
+            height: 360px;
+            position: relative;
+            top: 600px;
+            /* border: 2px solid red; */
+            background-color: black;
+        }
+        .foot {
+            /* border: 2px solid red; */
+            width: 100px;
+            height: 300px;
+            left: 30px;
+            top: 5px;
+            position: relative;
+        
+        }
+        .foot a{
+            
+            position: relative;
+            color: white;
+            /* text-align: center; */
+            text-decoration: none;
+        }
+        .foot a:hover{
+            position: relative;
+          
+        text-decoration: underline;
+        }
+        .foot h1{
+            position: relative;
+            color: gray;
+            top:20px;
+            text-align: center;
+        }
+        .pay{
+            width: 100px;
+            height: 300px;
+            position: relative;
+            /* border: 2px solid red; */
+            left: 140px;
+            top: -318px;
+        }
+        .pay h1{
+            position: relative;
+            top: 20px;
+            color: gray;
+            text-align: center;
+        }
+        .pay a{
+            color: white;
+            text-decoration: none;
+        }
+        .pay a:hover{text-decoration: underline;
+
+        }
+
+        .priv{
+            width: 140px;
+            height: 300px;
+            /* border: 2px solid red; */
+            left: 260px;
+            top: -643px;
+            position: relative;
+        }
+        .priv a{
+            color: white;
+        position: relative;
+            text-decoration: none;
+        }
+        .priv h1{
+            color: gray;
+            top: 20px;
+            position: relative;
+        }
+        .priv a:hover{
+            text-decoration: underline;
+        }
+
+        .for{
+            top: -960px;
+            width: 100px;
+            height: 300px;
+            /* border: 2px solid red; */
+            position: relative;
+            left: 430px;
+        }
+        .for a{
+            color: white;
+            text-decoration: none;
+        }
+        .for h1{
+            position: relative;
+            top: 20px;
+            color: gray;
+        }
+        .for a:hover{
+            text-decoration: underline;
+        }
+        .large{
+            width: 260px;
+            height:259px;
+            /* border: 2px solid red; */
+            position: relative;
+            left: 600px;
+            top: -1250px;
+            color: white;
+        }
+        .large p{
+            color: gray;
+        }
+        .flip{
+            width: 330px;
+            height: 300px;
+            /* border: 2px solid red; */
+            position: relative;
+            left: 880px;
+            top: -1520px;
+        }
+        .flip{
+            position: relative;
+            color: white;
+        }
+        .flip p{
+            color: gray;
+        }
+        .flip a{
+            color: blue;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+<div class="border">
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="bord">
+<input  placeholder=" Search For products brand,and More">
+
+<a href="#"><i class="fa-solid fa-user-secret"></i>Login</a>
+<a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+<a href="#"><i class="fa-solid fa-shop"></i>Become a Seller</a>
+<!-- <a href="#">:|</a> -->
+</div>
+<div class="photo">
+
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/085406bae47866d5.png?q=100" alt="gol">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/64f1cc66052c66ef.png?q=100" alt="ind">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/1fd83847b32a09d1.png?q=100" alt="Phone">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/6c0716819ac55121.png?q=100" alt="lcd">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/6dbed7ba5417672f.jpg?q=100" alt="man">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/c444de48eb75d450.png?q=100" alt="patte">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/f9c7aaa5f5455ae7.png?q=100" alt="home">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/26e11f4698473e49.png?q=100" alt="funi">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/8abe0a348a71d745.png?q=100" alt="flight">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/022cf9a62e8bd22c.png?q=100" alt="exel">
+</div>
+<div class="pic">
+
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/81a6ce54a0a3230a.jpg?q=20" alt="airo" width="100%" height="230px">
+</div>
+
+<div class="bank">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/140/image/065bf4ed0fee4532.jpg?q=20" alt="bank" width="1000px" height="100px">
+</div>
+
+<div class="phone">
+<img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGhvbmV8ZW58MHx8MHx8fDA%3D" alt="pho" width="240px" height="290px">
+<img src="https://images.unsplash.com/photo-1571079570759-8b8800f7c412?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHBob25lfGVufDB8fDB8fHww"alt="iphone" width="250px" height="290px">
+<img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fHBob25lfGVufDB8fDB8fHww" alt="max" width="250px" height="290px">
+<img src="https://images.unsplash.com/photo-1543069190-9d380c458bc2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" alt="pro" width="240px" height="290px">
+</div>
+<div class="iphone">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/19bc292770c054a9.jpg?q=20" alt="pho" width="350px"
+ height="200px">
+ <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/091151b16baabe39.png?q=20" alt="le" width="350px" height="200px">
+ <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/eabf4635dc528037.jpg?q=20" alt="top" width="350px" height="200px">
+</div>
+
+<div class="shoes">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D" alt="pla" width="300px" height="200px">
+<img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D" alt="sec" width="240px" height="200px">
+<img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNob2VzfGVufDB8fDB8fHww" alt="pant" width="300px" height="200px">
+<img src="https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRzaGlydHxlbnwwfHwwfHx8MA%3D%3D" alt="tshisrt" width="240px" height="200px">
+
+</div>
+<div class="moto">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/00bd6cf4e114899d.jpg?q=20" alt="motor" width="350px" height="200px">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/788e38837eef4f21.jpg?q=20" alt="ttm" width="350px" height="200px">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/7ddbf4bef36d5711.jpg?q=20" alt="book" width="350px" height="200px">
+</div>
+
+<div class="feature">
+ <h1>   Featured Brand </h1>
+<img src="https://rukminim1.flixcart.com/fk-p-flap/450/280/image/b0e7293f1710ad88.jpeg?q=20" alt="rasan" width="350px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/450/280/image/7b6d81ceb32199e1.jpeg?q=20" alt="ppppf" width="350px">
+<img src="  https://rukminim1.flixcart.com/fk-p-flap/450/280/image/3724935d27d89dff.jpeg?q=20" alt="perfiume" width="350px">
+</div>
+<div class="hair">
+
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/52e374aa46a30c6d.jpeg?q=20" alt="hai" width="380px"  height="209px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/649e4212ea8d67fc.jpg?q=20" alt="mai" width="380px" height="209px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/f295228872dfd9cf.jpg?q=20" alt="air" width="380px" height="209px">
+</div>
+<div class="chair">
+    <h1>Offers On Furniture </h1>
+    <img src="https://images.unsplash.com/photo-1429087969512-1e85aab2683d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hhaXJ8ZW58MHx8MHx8fDA%3D" alt="chair" width="270px" height="300px">
+    <img src="https://images.unsplash.com/photo-1499933374294-4584851497cc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRhYmxlfGVufDB8fDB8fHww" alt="tab" width="270px" height="300px">
+    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNoYWlyfGVufDB8fDB8fHww" alt="kur" width="270px" height="300px">
+    <img src="https://media.istockphoto.com/id/1426862687/photo/colorful-backpacks-and-boots-in-a-preschool-enterance.webp?b=1&s=170667a&w=0&k=20&c=yPCixQ4bkAc5PUPV7ESymjuG-OaHhckoBbnAycmBosI=" alt="sho" width="350px" height="300px">
+</div>
+<div class="oneplus">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/f2523f183cc73c4a.jpg?q=20" alt="onepl" width="380px" height="230px">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/043aded53ac17900.jpg?q=20" alt="pro" width="380px" height="230px">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/de2b7417aa2200a2.jpg?q=20" alt="max" width="380px" height="230px">
+</div>
+<div class="fan">
+<img src="https://images.unsplash.com/photo-1609766856923-7e0a0c06584d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGZyaWRnZXxlbnwwfHwwfHx8MA%3D%3D" alt="fir" width="300px" height="250px">
+<img src="https://images.unsplash.com/photo-1532726966163-97b405bccf30?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGZhbnxlbnwwfHwwfHx8MA%3D%3D" alt="bir" width="300px" height="250px">
+<img src="https://images.unsplash.com/photo-1414690165279-49ab0a9a7e66?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxjZHxlbnwwfHwwfHx8MA%3D%3D" alt="cool" width="300px" height="250px">
+<img src="https://images.unsplash.com/photo-1596566430365-55867e5ccaca?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGxjZHxlbnwwfHwwfHx8MA%3D%3D" alt="dont" width="270px" height="250px">
+</div>
+
+<div class="bulb">
+    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/8e83ff986fd64332.jpg?q=20" alt="kmc" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/3f83b7d675b43457.jpg?q=20" alt="pha" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/6ec27b009a601e43.jpg?q=20" alt="hari" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/2b38ff1b87fd0efb.jpg?q=20" alt="lap" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/9118b2ccca2829fe.jpg?q=20" alt="opp" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/5dce9720af66a5fc.jpg?q=20" alt="pine" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/97b4433044c2773a.png?q=20" alt="pho" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/8e878f85d26062dd.jpg?q=20" alt="par" width="390px" height="220px">
+<img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/1827e18a0c532367.jpg?q=20" alt="pank" width="390px" height="220px">
+</div>
+<div class="read">
+<h1>Small Home Appliances</h1>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa minima, cupiditate, atque accusantium tempore autem molestiae assumenda magnam deleniti laboriosam, distinctio in fugiat ipsum harum voluptate esse officia rerum laborum.
+Perspiciatis neque blanditiis similique voluptas consequatur iste, molestiae saepe delectus dolor nulla, dicta error temporibus, aliquid accusamus doloribus! Nobis magni enim illo aliquam iure itaque repellat rem eveniet maiores repellendus.
+Soluta praesentium voluptas quas vel, quasi nam quisquam assumenda. Eum, suscipit aspernatur architecto autem reprehenderit tempore voluptatibus libero, obcaecati id debitis error, amet vero ut! Autem obcaecati porro consequatur nemo?
+Atque ipsa soluta, iste magnam recusandae voluptatibus? Quod, dolorem. Praesentium vitae et doloremque ex accusantium laboriosam similique vero molestiae odio vel aliquam, atque corporis, eos, incidunt dolorem modi optio harum!
+Neque veniam, recusandae, fugiat exercitationem dolorem perspiciatis quos natus facere quia molestiae iste autem temporibus enim repudiandae amet consequuntur mollitia deserunt libero soluta cumque pariatur necessitatibus nihil cum! Libero, quo!
+Consequuntur excepturi odit reiciendis ipsam. Molestiae neque laboriosam quas soluta alias saepe tempora, placeat aut quod voluptatum! Dolorum consequatur optio placeat consequuntur iste doloribus alias voluptatum incidunt at. Nostrum, aliquam!
+Ratione, omnis tempora. Maiores ipsum quae tempora accusamus nesciunt esse explicabo, corporis, inventore labore tenetur asperiores molestias quasi neque quaerat! Soluta id, ducimus molestias optio asperiores repellendus! Totam, modi quod!
+Porro, quas reprehenderit soluta facere incidunt aliquam ullam, alias aspernatur magni deleniti, sit quasi amet? Tenetur perspiciatis expedita ad quidem dolorem exercitationem dolores quis molestias labore voluptatibus! Eligendi, consequatur nulla.
+Repellendus ratione dolorem laudantium ut, ea corporis, quis soluta repellat magni odio, asperiores quam. Quia libero unde ab, saepe maxime earum architecto nihil quasi asperiores vero. Ad, nulla! Sequi, molestias.
+Vero, qui? Corrupti aliquid eum rerum, delectus ratione voluptatem accusamus sequi saepe explicabo impedit suscipit sapiente doloremque voluptates praesentium, odit aut sit recusandae veritatis nostrum. Error numquam in blanditiis natus.
+Voluptatibus sunt distinctio, id, consequuntur odio porro quaerat eum nemo aut ex ea deleniti dolores. Suscipit vel, dolores ipsam minima omnis consequuntur exercitationem repudiandae deserunt repellendus tempore numquam culpa fuga?
+Facilis eius nostrum sapiente dolorem fugiat consequuntur quae, veniam earum sequi cupiditate sit odit iusto doloribus impedit necessitatibus adipisci cumque obcaecati sint ex aperiam nulla numquam! Ut esse vero dignissimos?
+Nisi maxime impedit deleniti non iusto in ratione reiciendis magni eos, alias quisquam eaque omnis quam odit. Aspernatur molestias neque autem dignissimos velit earum eveniet? Quis veritatis corporis et quidem?
+Modi quo consequatur magni, a blanditiis quisquam maxime in molestiae esse rerum neque quam. Animi, beatae, maiores architecto officiis hic consequatur voluptate minus dolore sequi, sed ullam esse ab ratione?
+Ex amet expedita minima at praesentium iusto, cum voluptatem nostrum mollitia, vero doloremque. Veniam, aut! Cumque at saepe quisquam aliquid quidem quis doloribus excepturi ducimus placeat, tenetur aliquam perferendis tempora.
+Dolorem non voluptatum eum. Assumenda a libero itaque ducimus ex. Quos explicabo placeat eaque nemo? Aliquam deleniti, placeat porro autem distinctio eius ducimus, culpa hic, cumque atque sequi recusandae accusamus.
+Architecto itaque eveniet aspernatur magni autem ut ex ratione fugit modi porro consectetur dicta cumque dignissimos repudiandae a delectus sit, quae praesentium, voluptas numquam id fuga eligendi quis minima. Cupiditate!
+Distinctio, asperiores sequi delectus pariatur iste dolores repudiandae quis quidem. Velit a, porro eaque quia hic quidem quaerat culpa tempora tempore quod natus voluptates enim fugit, accusamus autem expedita quo!
+Saepe rerum labore aliquam quibusdam quis vero sequi voluptatum ea impedit sit iusto dignissimos aspernatur eum facere vitae accusamus rem, nisi vel voluptates deserunt. Inventore totam sit vel aliquam est!
+Vitae amet tempora maiores quaerat, earum, quos autem eos vel sequi excepturi illo. Deleniti similique voluptatum, ipsam qui excepturi maxime sunt quae labore impedit nemo commodi eos animi, velit assumenda?
+
+ <h1>
+    lifestyle</h1>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, incidunt possimus. Voluptas commodi voluptate dolorum esse fugiat vel, quos architecto deserunt quia ratione facilis expedita, harum ab accusantium modi facere. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, quidem ratione! Itaque veniam optio illum eveniet asperiores quo dolorum deserunt fugiat, rerum excepturi, temporibus eaque obcaecati tenetur sapiente corrupti vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloribus magni autem vitae omnis, ullam iste, distinctio dolores eius quas nam, ea cum. Vitae minus animi voluptas praesentium temporibus est!
+ 
+</div>
+
+
+<div class="facbook">
+
+    <div class="foot">
+        <h1>About</h1>
+        <a href="#">Contact Us</a>
+        <a href="#">about Us</a> 
+         <a href="#">Careers</a>
+        <a href="#">Fplikart stories</a>
+        <a href="#">press</a> <br>
+        <a href="#">Flipkart Wholesale</a>
+        <a href="#">Cleartrip</a> <br>
+        <a href="#">Corporate</a>
+        <a href="#">Information</a>
+
+    </div>
+
+    <div class="pay">
+        <h1>Help</h1>
+        <a href="#"> payments</a>
+        <a href="#">Shippnig</a> 
+         <a href="#"> Cancellation</a>
+        <a href="#">Fplikart stories</a>
+        <a href="#"> Returns</a> <br>
+        <a href="#">Flipkart Wholesale</a>
+        <!-- <a href="#"></a> <br> -->
+
+    </div>
+
+    <div class="priv">
+        <h1>Consumer Policy</h1>
+        <a href="#"> Cancellation &</a>
+        <a href="#"> terms of use</a> 
+         <a href="#">Careers</a>
+        <a href="#">Fplikart stories</a>
+        <a href="#">press</a> <br>
+        <a href="#">Flipkart Wholesale</a>
+        <a href="#">EPR Compliance</a> <br>
+        <a href="#">Corporate</a>
+        <a href="#">Etc.</a>
+    </div>
+    <div class="for">
+        <h1>Social</h1>
+        <a href="#"> Facbook </a>
+        <a href="#"> Twitter</a> 
+         <a href="#">You tube :</a>
+   
+    </div>
+    <div class="large">
+        <p> mail us:</p>
+        <span>
+          Flipkart private limited,
+            Building alyssa,Begonia &
+            Colve Embassy Tech village,
+            Outer ring road,Devarabeesanahalli village,
+            Bengaluru,560103,
+            karnataka,India
+                </span>
+
+    </div>
+    <div class="flip">
+        <p>  Registered Office Address:</p>
+        <span>
+          Flipkart private limited,
+            Building alyssa, <br>Begonia &
+            Colve Embassy Tech village,
+            Outer ring road,Devarabeesanahalli village,
+            Bengaluru,560103,
+            karnataka,India
+            CIN:U51109ka2012PTCO66107
+             <br>Telephone: <a href="#">044-45614700</a>
+
+                </span>
+
+    </div>
+
+
+
+</div>
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+</body>
+</html>
