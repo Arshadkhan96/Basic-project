@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 800vh;
+            /* display: flex; */
+            flex-wrap: wrap;
+            justify-content: center;
+            /* border: 2px solid red; */
+            background-color: aquamarine;
+        }
+        .border{
+            width: 100%;
+            height: 90px;
+            align-items: center;
+            top: 0;
+            flex-wrap: wrap;
+            font-size: 2.5rem;
+             /* justify-content: center; */
+             justify-content: space-evenly ;
+            display: flex;
+            z-index: 1;
+            background-color: black;
+            position: fixed;
+            /* border: 2px solid red; */
+        }
+        .border a{
+            text-decoration: none;
+            color: white;
+          
+        }
+        .border a:hover{
+            color: red;
+        }
+        .border input{
+            font-size:x-large;
+            display: flex;
+            flex-wrap: wrap;
+            border: none;
+            text-align: center;
+        }
+        .name{
+            width: 100%;
+            height: 700px;
+            color: gray;
+            background-image: url("https://media.istockphoto.com/id/1398473177/photo/questionnaire-with-checkboxes-filling-survey-form-online-answer-questions.webp?b=1&s=170667a&w=0&k=20&c=Ld-E8ElmNgDKGxFBVyVFqqBDG6byHF98amsRMYFEedk=" );
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            font-size: 3.5rem;
+            /* border: 2px solid red; */
+            /* color: red; */
+             flex-wrap: wrap;
+             text-align: center;
+        }
+        .bord{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color:rgb(163, 233, 58);
+            justify-content: space-between;
+            /* border: 2px solid red; */
+             
+        }
+        .bor1{
+            width: 600px;
+            height: 500px;
+            /* flex-wrap: ; */
+             
+            /* border: 2px solid red; */
+        }
+        .bor1 h1{
+            color: gray;
+        }
+        .bor2{
+            width: 600px;
+            background-image: url(https://images.unsplash.com/photo-1556155092-490a1ba16284?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJ1c2luZXNzJTIwbWVldGluZyUyMHdlYiUyMGNvZGVyfGVufDB8fDB8fHww);
+            background-repeat: no-repeat;
+            flex-wrap: wrap;
+            background-size: cover;
+            height: 500px;
+            border-radius: 50px;
+            /* border: 2px solid red; */
+        }
+           
+        
+        .lite{
+            width: 100%;
+            height: 500px;
+          background-color: antiquewhite;
+            /* border: 2px solid red; */
+            display: flex; 
+            color: gray;
+        }
+        .cont{
+            width: 100%;
+            height: 1000px;
+            /* border: 2px solid red; */
+            background-color: rgb(163, 233, 58);
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .pho{
+            width: 500px;
+            height: 400px;
+            /* border: 2px solid red; */
+            border-radius: 30px;
+            background-image: url(https://plus.unsplash.com/premium_photo-1680807869379-435766727cdb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYnxlbnwwfHwwfHx8MA%3D%3D);
+             background-repeat: no-repeat;
+             background-size: cover;
+             filter: blur(5px);
+        }
+        
+        .pho:hover{
+            filter:none;
+
+        }
+        .poht{
+            width: 500px;
+            height: 400px;
+            background-image: url(https://images.unsplash.com/photo-1542744095-291d1f67b221?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fHww);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* border: 2px solid red; */
+            border-radius: 30px;
+            filter: blur(5px);
+        }
+        
+         
+        .poht:hover{
+            filter:none;
+        }
+        .po{
+            background-image: url(https://media.istockphoto.com/id/1349094915/photo/businessman-using-computer-laptop-for-learning-online-internet-lessons-e-learning-education.jpg?s=2048x2048&w=is&k=20&c=OMsDzKWENOZ92N5xmJoUx-JfJkAxOo1oIYr2d83suKU=);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 400px;
+            /* border: 2px solid red; */
+            transition: ease-in-out;
+            border-radius: 30px;
+            filter: blur(5px);
+        }
+        .po:hover{
+            filter: none;
+            transition: ease-in-out;
+        }
+         
+        .lo{
+            width: 500px;
+            height: 400px;
+            /* border: 2px solid red; */
+            background-image: url(https://media.istockphoto.com/id/1803992649/vector/software-development-coding-process-concept-programming-testing-cross-platform-code-app-on.jpg?s=612x612&w=0&k=20&c=9JX_Uhk0YSIqakQEXiSjo5NutvD4C8XOGIMc1cGRhiM=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            filter: blur(5px);
+        }
+        .lo:hover{
+            filter: none;
+        }
+        .level{
+            width: 500px;
+            height: 400px;
+            /* border: 2px solid red; */
+            background-image: url(https://media.istockphoto.com/id/1631593324/vector/mobile-app-software-develop-web-design-concept-web-design-elements-on-layout-website-on.jpg?s=1024x1024&w=is&k=20&c=RgLRFWgUhitDQLEMU0z4h7J65cClkIrO-E4H3MZ6OzU=);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            filter: blur(5px);
+        }
+        .level:hover{
+            filter: none;
+            transition: ease-in-out;
+        }
+        
+        .lev{
+            width: 500px;
+            height: 400px;            
+            /* border: 2px solid red; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(5px);
+            border-radius: 30px;
+            background-image: url(https://media.istockphoto.com/id/1219323914/photo/cyber-security-key-and-digital-security-system.jpg?s=612x612&w=0&k=20&c=mBFOdXDYTj8PKbjgeSe7tKHhdcv9N9nDLpDmnmMg--Y=);
+        }
+        
+        .lev:hover{
+            filter: none;
+           
+        }
+        .all{
+            width: 100%;
+            height: 400px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+            background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200._CB574597993_.jpg);
+            background-size: cover;
+            background-repeat:no-repeat ;
+            /* background-color: black; */
+        }
+        .phone{
+            width: 100%;
+            height: 900px;
+            display: flex;
+            background-color: white;
+            flex-wrap: wrap;
+            /* border: 2px solid rebeccapurple; */
+            justify-content: center;
+            display: flex;
+            
+           }
+           .phone h1{
+            top: 0;
+            color: blue;
+            font-size: 3.5rem;
+            text-align: center;
+           }
+           .mini{
+            width: 500px;
+            height: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+           }
+           .middel{
+            width: 500px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: row;
+            height: 700px;
+           
+            /* border: 2px solid red; */
+           }
+           .last{
+            width: 500px;
+            height: 700px;            
+            background-image: url(https://media.istockphoto.com/id/968108284/photo/shop-and-ai-e-commerce-concept.webp?b=1&s=170667a&w=0&k=20&c=lM02jGkI3sDHT6XcJqVBz2kvEWg1Vre5Qao2OpbWC9k=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            /* border: 2px solid red; */
+           }
+
+
+           .box1{
+            width: 500px;
+            height: 300px;
+            /* border: 2px solid red; */
+            background-image: url(https://media.istockphoto.com/id/1820034069/photo/2024-and-house-icon-with-coins.jpg?s=612x612&w=0&k=20&c=Uwls4wsC8Lhk9QVxbCDyaDYMg_yAQywZNtNAmRm1FkI=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+           }
+           .box1:hover{
+             transition-timing-function: ease-in-out;
+ transform: scaleX(0.5);
+
+           }
+           
+           .box2{
+            width: 260px;
+            background-image:url( https://media.istockphoto.com/id/1183057421/photo/first-place-gold-winners-trophy-with-laurel-wreath-and-falling-confetti.jpg?s=612x612&w=0&k=20&c=62u4P5AxgmJp-1v7pW3n3x1Qybzk3pyEx4yUK0XauEQ=);
+            background-repeat:no-repeat ;
+            background-size: cover;
+            height: 300px;
+            /* border: 2px solid red; */
+           }
+
+           .box2:hover{
+            transform: rotate(30deg);
+            transition: ease-in-out;
+           }
+           .boxo{
+            width: 230px;
+            height: 300px;
+            display: flex;
+            background-image:url(https://media.istockphoto.com/id/1346361085/photo/blue-house-with-coins-in-a-silver-broken-christmas-ball.jpg?s=612x612&w=0&k=20&c=VSle-OXTcmRJZey5irSm9j4w-_RkivEA6qGx1kbxMVM=);
+            background-repeat: no-repeat;
+            background-size: cover;             
+            /* border: 2px solid red; */
+           }
+           .box3{
+            width: 500px;
+            height: 300px;
+            background-color: palegreen;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            display: flex;
+            border-radius: 50%;
+            /* border: 2px solid red; */
+            text-align: center;
+            font-size: 2.5rem;
+            filter: none;
+           }
+           .box3 h2:hover{
+            filter:blur(4px);
+           }
+           .box4{
+            width: 500px;
+            height: 400px;
+            background-image: url(https://media.istockphoto.com/id/1324465031/photo/high-angle-view-close-up-asian-woman-using-meal-delivery-service-ordering-food-online-with.webp?b=1&s=170667a&w=0&k=20&c=PdIhDg9OT_qTFuSaavfhPDRyABCJL7X0MDBlyqasYQ0=);
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            background-size: cover;
+            filter: blur(5px);
+            /* border: 2px solid red; */
+           }
+           .box4:hover{
+            filter: none;
+           }
+           .can{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+            background-color: rgb(197, 82, 197);
+        
+           }
+           .lin{
+            width: 600px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+            background-image: url(https://media.istockphoto.com/id/944975198/photo/handwriting-text-writing-join-our-team-concept-meaning-be-a-part-of-our-teamwork-workforce.jpg?s=612x612&w=0&k=20&c=TK6k5belCtLmZwgTyEY5_JutTHYgdUWilBbnWFI-I7o=);
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+           .lin:hover{
+            filter: blur(4px);
+           }
+           .vert{
+            width: 600px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+            background-image: url(https://media.istockphoto.com/id/959938692/photo/back-to-school-concept-education-schedule-school-office-organizer-meeting-topview.jpg?s=612x612&w=0&k=20&c=tN2FHK-_ue1C_8hlNR-Z3RsTJE9H_Nuk-d2ed1OP_wM=);
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+           .vert:hover{
+            filter: blur(5px);
+           }
+           .tex{
+            width: 500px;
+           height: 500px;
+           display: flex;
+           flex-wrap: wrap;
+           background-image: url(https://media.istockphoto.com/id/1013435348/photo/businessman-flying-rocket-over-colorful-graph.jpg?s=612x612&w=0&k=20&c=RBsUx5f7gWio2FX44A8eueR0GSHaD8heT14BihXk8ZQ=);
+           background-repeat: no-repeat;
+           background-size: cover;
+            /* border: 2px solid red; */
+           }
+           .tex:hover{
+            filter: blur(5px);
+           }
+           .like{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            margin-top: 100px;
+            /* border: 2px solid red; */
+            background-color: rgb(112, 54, 167);
+            text-align: center;
+           }
+           .but a{
+            /* width: 30px; */
+            display: flex;
+            /* height: 300px; */
+            text-decoration: none;
+            top: -370px;
+            border-radius: 20px;
+            background-color: aqua;
+            font-size: 2.1rem;
+            color: white;
+            padding: 10px 40px;
+            margin-top: -80px;
+             }
+             .but a:hover{
+                color: black;
+             }
+             .footer{
+                width: 100%;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 2.6rem;
+                justify-content: space-around;
+                background-color: black;
+            /* border: 2px solid red; */
+             }
+             .first{
+                width: 300px;
+                height: 500px;
+                /* border: 2px solid red; */
+                flex-direction: column;
+             }
+             .second{
+                width: 300px;
+                height: 500px;
+                /* border: 2px solid red; */
+                text-decoration: none;
+                color: white;
+             }
+             .second a{
+                text-decoration: none;
+                color: white;
+             }
+             .second a:hover{
+                color: blue;
+             }
+             .third{
+                width: 300px;
+                height: 500px;
+                /* border: 2px solid red; */
+             }
+             .third a{
+                text-decoration: none;
+                color: white;
+             }
+             .third a:hover{
+                color: blue;
+             }
+             .for{
+                width: 300px;
+                height: 500px;
+                /* border: 2px solid red; */
+                text-decoration: none;
+                color: white;
+             }
+             .for a{
+                text-decoration: none;
+                color: white;
+             }
+             .for a:hover{
+                color: blue;
+             }
+             .first a{
+                color: white;
+                text-decoration: none;
+            /* flex-direction: column; */
+             }
+             .first a:hover{
+                color: blue;
+             }
+
+          
+          
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border">
+        <img src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxvZ298ZW58MHx8MHx8fDA%3D" width="120px" height="70px">
+
+            <a href="#">Home</a>
+            <input type="search" placeholder="SEARCH">
+            <a href="#">About</a>
+            <a href="#">Here</a>
+            <a href="#">Process</a>
+            <a href="#">amount</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="name">
+            <h1>WELCOME <br> TO <br> </b>  EZAZI <b> WEB TECHNOLOGY</h1>
+        <h5>Unleashing Digital Excellence: Empowering Businesses through Website Development</h5>        
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="bord">
+        <div class="bor1">
+            <h1>About Informaition</h1>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae cum voluptatem error nostrum, nihil officia cupiditate. Dolore, libero! Quibusdam dignissimos nam a, blanditiis temporibus necessitatibus voluptatum quod minus cupiditate neque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sunt iure adipisci laborum illum magnam qui dicta, placeat incidunt quisquam inventore, alias quo ex praesentium non doloribus ea, repellat fugit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis quos omnis asperiores illum nulla aliquid voluptate natus nesciunt. A veritatis praesentium dolorum delectus deserunt. Tempora sapiente vitae numquam ad?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quaerat aperiam, alias facilis sit dolorem dolorum unde. Voluptatem, consequuntur molestiae temporibus mollitia, repellendus minima, voluptatibus totam rem saepe sequi maxime.
+            </h3>
+
+        </div>
+        <div class="bor2">
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="lite">
+<br>
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum facere repellendus odio, aliquam perferendis alias accusamus dolor molestias odit unde necessitatibus, adipisci laboriosam sit inventore excepturi possimus repudiandae voluptatum quo?
+Fugit sapiente reiciendis impedit ducimus facilis ex explicabo molestias voluptatem unde praesentium quia repellendus reprehenderit, exercitationem ullam at minus aut doloribus. Quod, labore perferendis? Laudantium commodi recusandae totam magnam veritatis.
+Esse, quas! Libero nisi illum nulla et eos labore, facilis aliquid recusandae dolor nesciunt corporis totam ipsum ullam! Repellat molestiae tempora iste? Adipisci eius veniam similique unde facere placeat rem.
+Ratione, error nesciunt minus nemo incidunt, accusamus quis dolor, nulla ut tempore consequatur unde. Nisi laudantium tenetur itaque laboriosam? Perspiciatis maiores omnis unde at! Et, id? Non architecto possimus accusantium!
+Libero, illo at soluta, officiis autem alias repudiandae error quas ipsa veritatis harum quis! Eos fugit repudiandae ipsum ipsam dolor, numquam, aperiam neque earum excepturi vel, illo alias eligendi praesentium?
+Consequatur molestias voluptates commodi voluptatem? Veritatis molestias ex, possimus est tenetur illum ullam sed accusamus veniam debitis, molestiae, earum rerum consequuntur sunt laudantium labore quisquam voluptas autem vitae maiores reprehenderit.
+Tenetur, rem explicabo! Consequatur tempora ab sunt quidem omnis fugiat soluta quasi eligendi provident? Vero, in ullam id iure dolore dolorum assumenda hic quae ducimus ex quo voluptatem similique amet.
+Dolorem, esse id, vitae aspernatur rerum facere, sint reprehenderit libero consequatur doloremque ab temporibus optio necessitatibus nostrum mollitia dolore. Eius eum, consequatur sapiente laboriosam reiciendis debitis fugit corrupti iure exercitationem.
+Nostrum, autem tenetur ad quia enim quos cumque qui explicabo numquam quibusdam. Assumenda mollitia, fuga veniam quisquam ipsum, eligendi inventore atque, consequatur dolore voluptatum officiis consectetur voluptatem perferendis praesentium explicabo!
+Doloremque, maxime accusantium placeat aspernatur possimus maiores, eaque ratione reprehenderit voluptatem fugit soluta pariatur voluptate explicabo ducimus impedit obcaecati totam veniam illo officia veritatis aut ipsam, tempora libero sint. Quibusdam!
+Quos culpa nam officia, harum voluptate velit ad minus laudantium quis, saepe libero ratione deserunt suscipit blanditiis ullam. Quam, tempora. Blanditiis pariatur repellendus a minus ratione obcaecati aliquam repudiandae dolorem.
+Dolorum natus molestiae quidem dolore esse architecto expedita quibusdam officia perspiciatis, ipsam fugiat debitis iste unde. Fugiat nihil delectus consectetur mollitia atque fuga doloribus nam accusamus? Aspernatur corrupti corporis dicta!
+Sunt impedit, voluptatibus fugit cum voluptatum quidem, consectetur quos mollitia id reprehenderit iste non consequuntur obcaecati odio? Minus doloremque cum alias saepe, laborum iure minima aut voluptatibus est dignissimos sint.
+Laudantium, odit non sed aspernatur magni enim, numquam sapiente eaque, illum inventore animi. Laborum totam eos omnis accusantium. Nam aut harum tempora, adipisci eaque est sapiente architecto? Natus, nemo saepe!
+Sapiente, recusandae! Sequi tempore in deserunt, incidunt excepturi voluptas dolorem corrupti, laudantium sapiente enim voluptatum, totam quos nihil ex sed! Porro perferendis, officiis necessitatibus enim dolorem labore tempore deserunt expedita?
+Aut veritatis dolore, soluta doloribus eveniet deleniti cumque asperiores totam porro odit, architecto doloremque at voluptatum voluptates esse fugiat tempora exercitationem consectetur ab molestiae. Aut beatae esse adipisci molestias iure.
+Quibusdam sapiente veritatis necessitatibus! Facere impedit reiciendis tenetur fuga ratione harum temporibus omnis porro deleniti atque, aut similique, facilis inventore, doloribus reprehenderit ipsa quis necessitatibus quo? Repudiandae quia eius itaque?
+Atque mollitia, libero voluptatibus enim minima molestias architecto suscipit ipsum quisquam maiores illo magnam soluta officiis, quo ut. Nisi laborum modi, dolorem officiis qui magni similique repudiandae molestiae eius sed.
+A, quod magni. Excepturi ad magni incidunt distinctio saepe labore. Itaque sint delectus corrupti sunt odio, commodi illum ea quae aperiam aliquam. Deserunt fugit officia voluptas dicta quos, commodi delectus.
+Est dolores ad quos, tempore, natus exercitationem aut cum sapiente eveniet veritatis laborum eligendi nisi consequatur quo a deleniti voluptate illo cupiditate quae recusandae autem, praesentium tempora ipsa reiciendis! Fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem eveniet autem illo in corporis. Tempora beatae esse, distinctio incidunt rem cumque. Mollitia nemo dolor dicta minima dolores, tempore velit earum!
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="cont">
+        <div class="pho">
+
+        </div>
+        <div class="po">
+
+        </div>
+        <div class="poht">
+
+        </div>
+        <div class="lo">
+
+        </div>
+        <div class="level">
+
+        </div>
+        <div class="lev">
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="all">
+    </div>
+    <div class="phone">
+        <h1> WELCOME To   Your Trusted  <b>   EZAZI Website  </b>  Development Agency</h1>
+        <div class="mini">
+
+            <div class="box1">
+
+            </div>
+            <div class="box2"> 
+
+        </div> 
+        <div class="boxo">
+
+        </div>
+
+        </div>
+        <div class="middel">
+            <div class="box3">
+                <h2>////EZAZI\\\ <br> WEB <br>  TECHNOLOGY</h2>
+
+            </div>
+
+            <div class="box4">
+
+            </div>
+
+            <div class="bol">
+            
+
+            </div>
+        </div>
+
+        <div class="last">
+            <div class="box5">
+            
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="can">
+        <div class="lin">
+        </div>
+        <div class="vert">
+        </div>
+        <div class="tex">
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="like">
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo vitae, ratione aut provident porro impedit quisquam voluptates laborum saepe! Repellat, voluptas omnis? Modi, esse? Modi eum in quis omnis dolorum.
+            Rem excepturi provident consequuntur quis perspiciatis placeat fuga iure velit corporis, dolorem nam praesentium laudantium? Suscipit beatae, corporis sunt dignissimos id sit! Ullam quibusdam tempore quaerat alias. Itaque, est? Quod.
+            Laudantium, vero voluptatibus quisquam dolorum aliquam id eos laborum accusantium ducimus illum libero cum sequi consectetur minima assumenda expedita in! Nemo, laboriosam? Sint rem consequatur aliquam consequuntur sapiente eveniet ex!
+            Similique, eaque! Libero aliquid explicabo mollitia saepe nam doloremque temporibus nemo quaerat autem nesciunt, molestiae provident ducimus consequuntur laborum quo amet, earum sit cupiditate ratione. Nisi aliquid ipsam expedita sed!
+            Provident nulla recusandae esse? Similique inventore omnis iure ullam fugiat, aliquid neque porro expedita, rerum dicta incidunt? Fugiat officia, eligendi aperiam ad in incidunt qui magni deserunt aliquam iste voluptatum?
+            Consequuntur dolorum voluptas repellendus laboriosam labore similique voluptatibus odit recusandae eum libero molestiae minima, atque, sequi pariatur dolores delectus sed, natus quisquam. Labore, aspernatur corporis temporibus voluptate culpa voluptatum reprehenderit.
+            Et id tenetur, dignissimos voluptatem nulla laudantium illum qui incidunt voluptatibus velit beatae nihil consequatur ipsam quidem maiores provident iste corrupti esse nisi repellendus a illo. Delectus adipisci inventore provident?
+            Doloribus vel voluptatibus nesciunt. Quasi, qui consequatur quia itaque incidunt, quidem sapiente aliquam ab adipisci eveniet cupiditate explicabo quis. Veniam, inventore omnis aut incidunt doloremque nulla beatae vel quos voluptatibus?
+            Iusto doloremque quasi sint vel dignissimos nostrum repellendus assumenda accusantium dicta, corporis quod vero voluptate dolores laborum tempore quos! Eius odio, similique dignissimos delectus nihil saepe harum deleniti earum laudantium!
+            Delectus vero illo aperiam ducimus dolorem eos laboriosam sint! Quidem cupiditate esse consectetur enim facilis tempore veritatis soluta animi eligendi. Molestias, est architecto corporis totam quod nobis quae dolorem sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores similique eveniet, expedita rem ex at. Sequi corporis, maxime quasi rerum explicabo dicta veritatis itaque deleniti deserunt voluptatibus minus eaque porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt necessitatibus quod ducimus culpa perferendis laborum, tempora eos voluptatem dignissimos, iure dolore error reprehenderit quasi. Expedita incidunt eius dolore omnis laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus ducimus eaque, odit cumque asperiores recusandae eum repudiandae rem qui illo voluptates facilis est dignissimos doloribus obcaecati tempore sunt dolorum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt expedita ex placeat odio sed, tempore ipsam magnam enim officiis, quidem nihil saepe iusto nostrum quia reiciendis unde perferendis quisquam quis.
+        
+
+    </div>
+        <div class="but">
+    <a href="#">Read More</a>
+
+        </div>
+        <br>
+        <br>
+<div class="footer">
+
+    <div class="first">
+        <a href="#">About</a> <br>
+        <a href="#">animaition</a> <br>
+        <a href="#">email</a> <br>
+        <a href="#">Name</a> <br>
+        <a href="#">address</a> <br>
+        <a href="#">login</a> <br>
+        <a href="#">Tells</a>  <br>
+        <a href="#">have</a> <br>
+        <a href="#">finish</a> <br>
+    
+
+    </div>
+    <div class="second">
+        <a href="#">About</a> <br>
+        <a href="#">animaition</a> <br>
+        <a href="#">email</a> <br>
+        <a href="#">Name</a> <br>
+        <a href="#">address</a> <br>
+        <a href="#">login</a> <br>
+        <a href="#">Tells</a>   <br>
+        <a href="#">have</a> <br>
+        <a href="#">finish</a> <br>
+    
+    </div>
+    <div class="third">
+        <a href="#">About</a> <br>
+        <a href="#">animaition</a> <br>
+        <a href="#">email</a> <br>
+        <a href="#">Name</a> <br>
+        <a href="#">address</a> <br>
+        <a href="#">login</a> <br>
+        <a href="#">Tells</a>    <br>
+        <a href="#">have</a> <br>
+        <a href="#">finish</a> 
+    
+    </div>
+    <div class="for">
+        <a href="#">About</a> <br>
+        <a href="#">animaition</a> <br>
+        <a href="#">email</a> <br>
+        <a href="#">Name</a> <br>
+        <a href="#">address</a> <br>
+        <a href="#">login</a> <br>
+        <a href="#">Tells</a>   <br>
+        <a href="#">have</a> <br>
+        <a href="#">finish</a>
+    
+    </div>
+
+
+</div>
+
+
+       
+
+    </div>
+    
+</body>
+</html>
